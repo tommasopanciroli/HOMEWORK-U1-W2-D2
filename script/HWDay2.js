@@ -85,9 +85,17 @@ console.log("L'ammontare della spesa è: euro", totalAmount)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let ShoppingCart = 90
+let shoppingCart = 90
 let spedizione = 10
-let discount = 20
+let totalToPay
+
+if (shoppingCart * 0.8 >= 50) {
+  totalToPay = shoppingCart * 0.8
+} else {
+  totalToPay = shoppingCart * 0.8 + spedizione
+}
+
+console.log('Il totale da pagare è €', totalToPay)
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -96,6 +104,20 @@ let discount = 20
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let z1 = 29
+let z2 = 43
+let z3 = 33
+
+if (z1 > z2) {
+  if (z1 > z3) {
+    if (z2 > z3) {
+    } else {
+    }
+  } else {
+  }
+} else {
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -183,6 +205,5 @@ console.log(emptyArray)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 emptyArray.pop()
-
 emptyArray.push(100)
 console.log(emptyArray)
