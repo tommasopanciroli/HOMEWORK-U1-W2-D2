@@ -183,5 +183,6 @@ console.log(emptyArray)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 emptyArray.pop()
-console.log(emptyArray)
 
+emptyArray.push(100)
+console.log(emptyArray)
