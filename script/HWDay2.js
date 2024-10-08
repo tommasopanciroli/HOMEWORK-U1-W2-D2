@@ -6,23 +6,26 @@
 
 let n1 = 20
 let n2 = 10
-let biggest
 
+let biggest
 if (n1 > n2) {
-    biggest = n1
+  biggest = n1
 } else {
-    biggest = n2
+  biggest = n2
 }
 
-console.log(biggest)
+console.log('biggest', biggest)
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let number = 7
 
-
+if (number !== 5) {
+  console.log('not equal')
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -30,11 +33,30 @@ console.log(biggest)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let number2 = 25
+
+if (number2 % 5 === 0) {
+  console.log('divisibile per 5')
+}
+
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let num1 = 30
+let num2 = 22
+
+if (
+  num1 === 8 ||
+  num2 === 8 ||
+  num1 + num2 === 8 ||
+  num1 - num2 === 8 ||
+  num2 - num1 === 8
+) {
+  console.log('VERIFICATO')
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -44,12 +66,25 @@ console.log(biggest)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totalShoppingCart = 55
+let shippingCost = 10
+if(totalShoppingCart > 50) {
+    shippingCost = 0
+} else {
+    shippingCost
+}
+
+let total = totalShoppingCart + shippingCost
+
+console.log ("L'ammontare della spesa è: euro", total)
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -90,34 +125,33 @@ console.log(biggest)
 */
 
 const me = {
-    name: 'John',
-    lastName: 'Doe',
-    skills: ['javascript', 'html', 'css'],
-  }
-  
-  /* SCRIVI QUI LA TUA RISPOSTA */
-  
-  /* ESERCIZIO 12
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+}
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+/* ESERCIZIO 12
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
   */
-  
-  /* SCRIVI QUI LA TUA RISPOSTA */
-  
-  /* ESERCIZIO 13
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+/* ESERCIZIO 13
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
   */
-  
-  /* SCRIVI QUI LA TUA RISPOSTA */
-  
-  /* ESERCIZIO 14
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+/* ESERCIZIO 14
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
   */
-  
-  /* SCRIVI QUI LA TUA RISPOSTA */
-  
-  /* ESERCIZIO 15
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+/* ESERCIZIO 15
     Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
   */
-  
-  /* SCRIVI QUI LA TUA RISPOSTA */
-  
+
+/* SCRIVI QUI LA TUA RISPOSTA */
