@@ -68,15 +68,15 @@ if (
 
 let totalShoppingCart = 55
 let shippingCost = 10
-if(totalShoppingCart > 50) {
-    shippingCost = 0
+if (totalShoppingCart > 50) {
+  shippingCost = 0
 } else {
-    shippingCost
+  shippingCost
 }
 
-let total = totalShoppingCart + shippingCost
+let totalAmount = totalShoppingCart + shippingCost
 
-console.log ("L'ammontare della spesa è: euro", total)
+console.log("L'ammontare della spesa è: euro", totalAmount)
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -85,6 +85,9 @@ console.log ("L'ammontare della spesa è: euro", total)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let ShoppingCart = 90
+let spedizione = 10
+let discount = 20
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -98,7 +101,18 @@ console.log ("L'ammontare della spesa è: euro", total)
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
+let word = '30'
+if (typeof word === 'string') {
+  console.log('è una stringa')
+} else {
+  console.log('è un numero')
+}
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let n = 10
+let type = typeof n
+console.log(type)
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -132,11 +146,17 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.city = 'Toronto'
+console.log(me)
+
 /* ESERCIZIO 12
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
   */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+delete me.lastName
+console.log(me)
 
 /* ESERCIZIO 13
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -144,14 +164,24 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.skills.pop()
+console.log(me)
+
 /* ESERCIZIO 14
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
   */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let emptyArray = []
+emptyArray.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+console.log(emptyArray)
+
 /* ESERCIZIO 15
     Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
   */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+emptyArray.pop()
+console.log(emptyArray)
+
